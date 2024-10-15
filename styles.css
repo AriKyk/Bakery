@@ -1,0 +1,6 @@
+.button{
+    color: var(--bakery-landing-1-background);
+    background-color: var(--bakery-landing-1-c2);
+    border: 2px solid var(--bakery-landing-1-c2);
+    border-radius: 8px;
+}
