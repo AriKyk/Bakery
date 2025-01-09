@@ -40,7 +40,9 @@
 }
 
 /* Base */
-* {
+* ,
+*::before,
+*::after{
     box-sizing: border-box;
 }
 
@@ -64,6 +66,9 @@ p {
     margin-top: 0;
 }
 
+a{
+    display: inline-block;
+}
 address {
     font-style: normal;
 }
@@ -269,6 +274,14 @@ ul {
     font-weight: 600;
 }
 
+.chef-text p{
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child{
+    margin-bottom: 0;
+}
+
 /* Formats section */
 .formats-container{
     display: flex;
@@ -352,13 +365,19 @@ ul {
 
 
 /* Footer */
+.footer{
+    padding: 32px 0;
+}
 .footer-container{
     display: flex;
+    gap: 20px;
 }
 
 .footer-nav{
     display: flex;
     flex-basis: 50%;
+    gap: 20px;
+
 }
 
 .footer-logo{
@@ -372,6 +391,7 @@ ul {
 .footer-address{
     display: flex;
     flex-basis: 50%;
+    gap: 20px;
 }
 
 .address-list{
