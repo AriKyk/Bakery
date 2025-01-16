@@ -23,7 +23,7 @@
                         <li><a class="link" href="#contact-section">Контакти</a></li>
                      </ul>
                 </nav>
-                <button class="button" type="button">Замовити дзвінок</button>
+                <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
             </div>
         </div>
     </header>
@@ -144,7 +144,7 @@
                     </article>
                 </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
                 <svg wildth="16" height="16">
                     <use href="./images/ico.svg#Arrow"></use>
                 </svg>
@@ -217,7 +217,12 @@
         </div>
     </footer>
 
-    <div class="backdrop"></div>
-    <div class="modal"></div>
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal-btn-close" type="button">Close</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
