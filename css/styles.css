@@ -502,12 +502,53 @@ ul {
     max-width: 880px;
     height: 100%;
     max-height: 880px;
+    padding: 128px;
     background-color: var(--Color-primary-light);
     border-radius: 30px;
+    overflow-y: auto;
 }
 
 .modal-btn-close{
     position: absolute;
     top: 40px;
     right: 40px;
+}
+
+/* Form */
+.form-field{
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.form-label{
+    position: absolute;
+    top: 16px;
+    left: 42px;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--Color-secondary-dark);
+    transition: transform 0.3s;
+}
+
+.form-input{
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid var(--Color-secondary-dark);
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.form-input:focus{
+    border-color: var(--Color-brand-normal);
+    outline: none;
+}
+
+.form-input::placeholder{
+    color: var(--Color-secondary-dark);
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.form-input:focus::placeholder{
+    color: var(--Color-primary-dark);
 }
