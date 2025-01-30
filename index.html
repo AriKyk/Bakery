@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сучасна пекарня +</title>
+    <title>Сучасна пекарня</title>
     <!-- Styles-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -156,7 +156,26 @@
                     <div class="contact-form">
                         <h2 class="contact-title section-title">Приєднуйся до мережі пекарень</h2>
                         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-                        <!-- form -->
+                        <form name="contact-form" autocomplete="off" novalidate>
+                            <div class="form-field">
+                                <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+                                <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я">
+                            </div>
+                
+                                <div class="form-field">
+                                    <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+                                    <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон">
+                                </div>
+            
+                                <div class="form-field">
+                                    <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+                                    <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електронна пошта">
+                                </div>
+                            
+                            <button class="form-button button" type="submit">Замовити дзвінок</button>
+                            <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою конфіденційності</a>
+                            </p>
+                        </form>
                     </div>
                     <iframe
                     class="contact-map"
@@ -222,24 +241,27 @@
             <button class="modal-btn-close" type="button">Close</button>
             <h2>Замовити дзвінок</h2>
             <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-            <form name="contact-form" autocomplete="off" novalidate>
+            <form name="modal-form" autocomplete="off">
                 <div class="form-field">
                     <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я">
+                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я" required>
                 </div>
     
                     <div class="form-field">
                         <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-                        <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон">
+                        <input class="form-input" type="tel" name="user-tel" id="user-tel" pattern="^\+{0-9{12}}" placeholder="Телефон" required>
                     </div>
 
                     <div class="form-field">
                         <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
-                        <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електронна пошта">
+                        <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електронна пошта" required>
                     </div>
-                
-                <button type="submit">Замовити дзвінок</button>
-                <p>Натискаючи на кнопку я погоджуюсь з <a href="#">політикою конфіденційності</a>
+
+                <input class="checkbox-input visually-hidden" type="checkbox" id="terms-conditions" name="terms-conditions">
+                <label class="checkbox-label" for="terms-conditions">Я точно погоджуюся з політикою конфіденційності </label>
+
+                <button class="form-button button" type="submit" disabled>Замовити дзвінок</button>
+                <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою конфіденційності</a>
                 </p>
             </form>
         </div>

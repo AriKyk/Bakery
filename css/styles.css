@@ -99,6 +99,7 @@ ul {
 }
 
 /* Button */
+
 .button {
     padding: 16px 32px;
     color: var(--Color-primary-light);
@@ -113,6 +114,13 @@ ul {
     color: var(--Color-brand-dark);
     background-color: transparent;
 }
+
+/*  .button:disabled {
+    color: gray;
+    background-color: lightgrey;
+    border-color: currentColor;
+    cursor: not-allowed; 
+} */
 
 /* Link */
 .link {
@@ -543,6 +551,14 @@ ul {
     outline: none;
 }
 
+.form-input:disabled{
+    border-color: lightgray;
+}
+
+.form-input:disabled::placeholder{
+    color: lightgray;
+}
+
 .form-input::placeholder{
     color: var(--Color-secondary-dark);
     font-size: 16px;
@@ -551,4 +567,31 @@ ul {
 
 .form-input:focus::placeholder{
     color: var(--Color-primary-dark);
+}
+
+.form-button{
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.form-terms{
+    margin: 0 auto;
+    max-width: 220px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.form-terms-link{
+    color: var(--Color-primary-dark);
+    text-underline-offset: 2px;
+}
+
+.checkbox-input{
+    appearance: none;
+}
+
+.checkbox-input:checked+.check-label{
+    color: green;
 }
