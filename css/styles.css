@@ -588,10 +588,30 @@ ul {
     text-underline-offset: 2px;
 }
 
+/* .checkbox{
+    position: relative;
+}
+
 .checkbox-input{
     appearance: none;
 }
 
-.checkbox-input:checked+.check-label{
-    color: green;
+.checkbox-input:checked + .checkbox-label::before{
+    background-color: var(--Color-secondary-dark);
 }
+
+.checkbox-label{
+    padding-left: 24px;
+}
+
+.checkbox-label::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--Color-primary-dark);
+    border-radius: 2px;
+    content: '';
+} */
