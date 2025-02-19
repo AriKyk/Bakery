@@ -142,6 +142,11 @@ ul {
     padding-top: 32px;
 }
 
+    @media screen and (max-width: 1200px) {
+       display: none; 
+    }
+
+
 .header-container {
     display: flex;
     align-items: center;
